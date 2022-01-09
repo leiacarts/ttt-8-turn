@@ -3,9 +3,8 @@
 puts "Welcome to Tic Tac Toe!"
 board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 puts "Where would you like to go?"
-puts "Please enter 1-9:"
-user_input = gets.strip
-index = input_to_index(user_input)
-
-move(board, index)
 display_board(board)
+counter = 10
+while counter < 10
+    turn(board)
+end
